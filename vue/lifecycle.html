@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vue.js Lifecycle Hooks Example</title>
+  <script src="https://unpkg.com/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <h1>{{ message }}</h1>
+    <button @click="changeMessage">Change Message</button>
+  </div>
+
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        message: 'Hello, Vue.js!'
+      },
+      beforeCreate() {
+        alert("beforeCreate Hook: Component is about to be created.");
+        console.log('beforeCreate Hook: Component is about to be created.');
+      },
+      created() {
+        alert("created Hook: Component has been created.");
+        console.log('created Hook: Component has been created.');
+      },
+      beforeMount() {
+        alert("beforeMount Hook: Component is about to be mounted to the DOM.");
+        console.log('beforeMount Hook: Component is about to be mounted to the DOM.');
+      },
+      mounted() {
+        alert("mounted Hook: Component has been mounted to the DOM.");
+        console.log('mounted Hook: Component has been mounted to the DOM.');
+      },
+      beforeUpdate() {
+        alert("beforeUpdate Hook: Component is about to be updated.");
+        console.log('beforeUpdate Hook: Component is about to be updated.');
+      },
+      updated() {
+        alert("updated Hook: Component has been updated.");
+        console.log('updated Hook: Component has been updated.');
+      },
+      methods: {
+        changeMessage() {
+          this.message = 'New Message!';
+        }
+      }
+    });
+  </script>
+</body>
+</html>
