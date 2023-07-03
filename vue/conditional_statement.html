@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vue.js Conditional Statement Example</title>
+  <script src="https://unpkg.com/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <label for="numberInput">Enter a number:</label>
+    <input type="number" id="numberInput" v-model="number">
+    <!-- this condiiton is set to avoid by default value that is null -->
+    <div v-if="number !== null">
+        <!-- if number is even -->
+      <div v-if="number % 2 === 0">
+        <p>{{ number }} is an even number.</p>
+      </div>
+      <!-- if number is odd -->
+      <div v-else-if="number % 2 !== 0">
+        <p>{{ number }} is an odd number.</p>
+      </div>
+    </div>
+    <!-- otherwise this will be printed -->
+    <div v-else>
+      <p>Please insert a valid number</p>
+    </div>
+  </div>
+
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        number: null
+      }
+    });
+  </script>
+</body>
+</html>
