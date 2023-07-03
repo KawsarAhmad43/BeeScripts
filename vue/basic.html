@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vue.js Example</title>
+  <!-- Vue CDN -->
+  <script src="https://unpkg.com/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+    <!-- the app instance of vue  -->
+  <div id="app">
+    <!-- rendering vue variable -->
+    <h1>{{ title }}</h1>
+    <h1>{{ message }}</h1>
+    <!-- triggering changeMessage() method on click event -->
+    <button @click="changeMessage">Change Message</button>
+  </div>
+
+  <script>
+    // initializing instance
+    new Vue({
+      el: '#app',
+      data: {
+        title: 'Vue Example',
+        message: 'Hello, Vue.js!'
+      },
+      methods: {
+        changeMessage() {
+          this.message = 'New Message!';
+        }
+      }
+    });
+  </script>
+</body>
+</html>
