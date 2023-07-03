@@ -140,5 +140,33 @@ console.log("Total Taka:", totalTaka);
 
 
 
+//example 7
+const names = [
+  { 
+  name: "Hasan",
+  title: "hasan", 
+  count: [10, 20, 30]
+  },
+  { 
+  name: "Abdul", 
+  title: "abdul", 
+  count: [50, 80, 30]
+  },
+  {
+  name: "Karim", 
+  title: "karim", 
+  count: [20, 20, 90]
+  }
+];
+
+// Extract and sum the count arrays for each object
+const individualSums = names.map(obj => obj.count.reduce((sum, num) => sum + num, 0));
+console.log(individualSums);
+// sum all the individualSums
+const totalSum = individualSums.reduce((sum,num)=>sum+num,0);
+console.log(totalSum);
+
+
+
 
 
