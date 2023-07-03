@@ -16,30 +16,37 @@
       data: {
         message: 'Hello, Vue.js!'
       },
+    // This hook is triggered before the component is created. It is a good place to initialize data or setup event listeners.
       beforeCreate() {
         alert("beforeCreate Hook: Component is about to be created.");
         console.log('beforeCreate Hook: Component is about to be created.');
       },
+    // This hook is triggered after the component has been created. It is useful for making API calls or performing other initialization tasks.
       created() {
         alert("created Hook: Component has been created.");
         console.log('created Hook: Component has been created.');
       },
+    //   This hook is called right before the component is mounted to the DOM.can use this hook to access the component's template and manipulate it.
       beforeMount() {
         alert("beforeMount Hook: Component is about to be mounted to the DOM.");
         console.log('beforeMount Hook: Component is about to be mounted to the DOM.');
       },
+    //   This hook is called after the component has been mounted to the DOM. It is a suitable place for performing tasks that require access to the DOM.
       mounted() {
         alert("mounted Hook: Component has been mounted to the DOM.");
         console.log('mounted Hook: Component has been mounted to the DOM.');
       },
+    //   This hook is triggered before the component is updated due to changes in its data or props.
       beforeUpdate() {
         alert("beforeUpdate Hook: Component is about to be updated.");
         console.log('beforeUpdate Hook: Component is about to be updated.');
       },
+    //   This hook is called after the component has been updated. It is useful for performing actions that depend on the updated state of the component
       updated() {
         alert("updated Hook: Component has been updated.");
         console.log('updated Hook: Component has been updated.');
       },
+    //   
       methods: {
         changeMessage() {
           this.message = 'New Message!';
