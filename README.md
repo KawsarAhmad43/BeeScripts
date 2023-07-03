@@ -2,3 +2,7 @@
 
 # BeeScripts
 #### "BeeScripts" is a GitHub repository featuring concise code examples in JavaScript, PHP, Laravel, Vue.js, and machine learning. It provides practical implementations and best practices to help developers learn and improve their skills in these technologies.
+
+
+### This repo is inspired by [Muhammad-Sarfaraz](https://github.com/Muhammad-Sarfaraz).
+
