@@ -5,4 +5,5 @@
 
 
 ##### This repo is inspired by [Muhammad-Sarfaraz](https://github.com/Muhammad-Sarfaraz).
+![GitHub stars](https://img.shields.io/github/stars/KawsarAhmad43/BeeScripts)
 
