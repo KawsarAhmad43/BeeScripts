@@ -21,6 +21,7 @@ sum = num1 + num2
 
 # Print the result
 print("The sum of", num1, "and", num2, "is", sum)
+# check if the result is odd or even
 if sum % 2 ==0:
       print(sum, "is even")
 else:
