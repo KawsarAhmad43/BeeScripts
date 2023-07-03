@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vue.js conditional statement Example</title>
+  <script src="https://unpkg.com/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <h1>{{ selectedLanguage }}</h1>
+    <select v-model="selectedLanguage">
+      <option value="html">HTML</option>
+      <option value="vue">Vue</option>
+      <option value="laravel">Laravel</option>
+    </select>
+    <!-- vue conditional statement -->
+    <div v-if="selectedLanguage === 'html'">
+      <h2>HTML Information</h2>
+      <p>HTML is the standard markup language for creating web pages.</p>
+    </div>
+     <!-- vue conditional statement -->
+    <div v-if="selectedLanguage === 'vue'">
+      <h2>Vue Information</h2>
+      <p>Vue.js is a progressive JavaScript framework for building user interfaces.</p>
+    </div>
+     <!-- vue conditional statement -->
+    <div v-if="selectedLanguage === 'laravel'">
+      <h2>Laravel Information</h2>
+      <p>Laravel is a free, open-source PHP web framework used for web application development.</p>
+    </div>
+  </div>
+  
+
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        selectedLanguage: 'html'
+      },
+      updated() {
+         //here to Perform any additional logic or actions  based on the selected value
+        alert("Selected language: " + this.selectedLanguage);
+        console.log('Updated Hook: Dropdown value changed');
+       
+      }
+    });
+  </script>
+</body>
+</html>
