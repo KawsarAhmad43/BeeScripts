@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vue.js v-show Example</title>
+  <script src="https://unpkg.com/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <button @click="toggleMessage">Toggle Message</button>
+    <p v-show="showMessage">This Message is Shown</p>
+  </div>
+
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        showMessage: true
+      },
+      methods: {
+        toggleMessage() {
+          this.showMessage = !this.showMessage;
+          alert("this message will be hidden now");
+        }
+      }
+    });
+  </script>
+</body>
+</html>
