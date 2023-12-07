@@ -1,0 +1,9 @@
+https://github.com/jjrb3/laravel-design-patterns
+https://github.com/bedus-creation/aws/tree/master/src
+https://github.com/SumonMSelim/solid-principles-example-laravel
+https://mohasin-dev.medium.com/abstract-class-in-php-with-example-cc53b1428e20
+https://blog.devgenius.io/laravel-repository-design-pattern-a-quick-demonstration-5698d7ce7e1f
+https://github.com/s-shemmee/Object-Oriented-Programming-Concepts
+https://github.com/championshuttler/docker-basicLearning
+https://github.com/kamranahmedse/design-patterns-for-humans
+
