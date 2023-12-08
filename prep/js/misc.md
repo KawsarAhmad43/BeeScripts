@@ -30,6 +30,19 @@ console.log(result);  // Outputs: 6
 #### Callback
  Callbacks are functions that are passed as arguments to another function 
 ```javascript
+// Define a function that plays music
+function playMusic() {
+  console.log("Music is playing 🎵");
+}
+
+// Define a function that represents the button on the toy
+function pressButton(callback) {
+  // When the button is pressed, call the callback function
+  callback();
+}
+
+// Now, let's press the button and see what happens
+pressButton(playMusic);
 ```
 NAN
 ```javascript
