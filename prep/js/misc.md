@@ -44,6 +44,13 @@ function pressButton(callback) {
 // Now, let's press the button and see what happens
 pressButton(playMusic);
 ```
-NAN
+#### Object Freeze
+Object.freeze(obj) prevents any modifications to the properties of the obj object, making it immutable.
 ```javascript
+let obj = {
+  name: "john Abraham Khan",
+age: "40",
+};
+
+Object.freeze(obj);
 ```
