@@ -63,3 +63,29 @@ enable_maintenance_mode()
 
 # Checking the global status of the application
 print("Global app status:", app_status)
+
+
+#local and global variable
+# we use local variable when we need too access that varaibles lifetime only within in that function execution lifetime
+# we use global variable when we think that we need to access the variable in that programs entire execution time or through the whole program
+
+# Global variable
+count = 0
+
+# Function that uses a local variable and modifies the global variable
+def increment():
+    global count  # Declare 'count' as a global variable 
+    count += 1  # Modify the global 'count'
+    local_var = "Local Variable"  # This is a local variable
+    print(local_var)  # This will print the local variable
+
+def main():
+    print(f"Initial count (global): {count}")
+    increment()  # Call the function that modifies the global variable
+    print(f"Count after increment (global): {count}")
+    
+# This ensures that main() is only called if we run this script directly
+if __name__ == "__main__":
+    main()
+    -----------------------
+    in this example we saw that we accessed the global variable using the global keyword if we didnt used the keyword global in the increment meethod it would act as an local variable
